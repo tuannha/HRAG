@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "hrag"
+version = "0.1.0"
+description = "A FastAPI implementation of RAG that uses both Vectorstore and GraphRAG to generate context for LLM"
+authors = ["Tuan Nguyen <hatng@kth.se>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.2.16"
+langchain-community = "^0.2.16"
+langgraph = "^0.2.19"
+ipython = "^8.27.0"
+fastapi = "^0.114.0"
+uvicorn = "^0.30.6"
+gunicorn = "^23.0.0"
+pgvector = "^0.3.3"
+psycopg2-binary = "^2.9.9"
+pypdf = "^4.3.1"
+docx2txt = "^0.8"
+python-multipart = "^0.0.9"
+pydantic-settings = "^2.4.0"
+neo4j = "^5.24.0"
+sqlalchemy = "^2.0.34"
+alembic = "^1.13.2"
+fastapi-sqlalchemy = "^0.2.1"
+langchain-openai = "^0.1.23"
+langchain-groq = "^0.1.9"
+langchain-experimental = "^0.0.65"
+flashrank = "^0.2.9"
+transformers = "^4.44.2"
+json-repair = "^0.29.2"
+fastapi-versioning = "^0.10.0"
+fastapi-pagination = "^0.12.27"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

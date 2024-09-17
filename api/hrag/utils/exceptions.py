@@ -1,0 +1,2 @@
+class HybridRagException(Exception):
+    pass
